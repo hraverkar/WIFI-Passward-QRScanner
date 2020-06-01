@@ -1,14 +1,39 @@
 <mat-card>
   <mat-card-header>
-    <mat-card-title>Wifi Scanner</mat-card-title>
+    <div className="App">
+      <h1><span role="img" aria-label="antenna-bars">📶</span>&nbsp; WiFi Login QR Code</h1>
+      <p className="tag">
+        Print a simple card with your WiFi login details. Tape it to the fridge, keep it in your wallet, etc.
+      </p>
+      <p className="tag">
+        Your WiFi information is never sent to the server.
+        No tracking, analytics, or fingerprinting are used on this website.
+        View the <a href="https://github.com/hraverkar/WIFI-Passward-QRScanner">source code</a>.
+      </p>
+    </div>
+
   </mat-card-header>
   <mat-card-content>
     <qrcode [qrdata]="str" [width]="256" [errorCorrectionLevel]="'M'"></qrcode>
   </mat-card-content>
   <mat-card-actions>
-    <input matInput placeholder="Enter ssid" [(ngModel)]="ssid">
-    <input matInput placeholder="Enter password" [(ngModel)]="password">
+      <p>
+        <mat-form-field appearance="outline">
+          <mat-label>SSID</mat-label>
+          <input matInput placeholder="Wifi SSID" [(ngModel)]="ssid">
+          <mat-icon matSuffix>sentiment_very_satisfied</mat-icon>
+        </mat-form-field>
+      </p>
 
+      <p>
+        <mat-form-field appearance="outline">
+          <mat-label>Password</mat-label>
+          <input matInput placeholder="Password" [(ngModel)]="password">
+          <mat-icon matSuffix>sentiment_very_satisfied</mat-icon>
+        </mat-form-field>
+      </p>
     <button mat-raised-button color="primary" (click)="ganerateCard()">Genarate Password QR</button>
   </mat-card-actions>
 </mat-card>
+
+

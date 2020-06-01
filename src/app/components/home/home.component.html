@@ -1,0 +1,14 @@
+<mat-card>
+  <mat-card-header>
+    <mat-card-title>Wifi Scanner</mat-card-title>
+  </mat-card-header>
+  <mat-card-content>
+    <qrcode [qrdata]="str" [width]="256" [errorCorrectionLevel]="'M'"></qrcode>
+  </mat-card-content>
+  <mat-card-actions>
+    <input matInput placeholder="Enter ssid" [(ngModel)]="ssid">
+    <input matInput placeholder="Enter password" [(ngModel)]="password">
+
+    <button mat-raised-button color="primary" (click)="ganerateCard()">Genarate Password QR</button>
+  </mat-card-actions>
+</mat-card>

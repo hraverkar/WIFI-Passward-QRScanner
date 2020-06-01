@@ -23,7 +23,7 @@
     "@angular/router": "~9.1.4",
     "@angular/service-worker": "~9.1.4",
     "angularx-qrcode": "^2.1.1",
-    "bootstrap": "4.1.1",
+    "bootstrap": "4.3.1",
     "bulma": "^0.8.2",
     "ngx-bootstrap": "^5.6.1",
     "rxjs": "~6.5.4",

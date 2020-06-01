@@ -4,7 +4,7 @@
 Get the wifi password qrScannner and print it and tap it enywhare.
 
 # Screenshot
-![Img1](https://github.com/hraverkar/WeatherWidget/blob/master/screenshot/11.png)
+![Img1](https://github.com/hraverkar/WIFI-Passward-QRScanner/blob/master/screenshot/11.PNG)
 
 ## Live Preview
 

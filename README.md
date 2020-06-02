@@ -13,7 +13,6 @@ You can [view the app live here](https://wifi-passward-qrscanner.hraverkar.now.s
 ## Tech Stack
 
 * Angular 9
-* OpenWeather API
 * Node.js
 
 ## Project setup
